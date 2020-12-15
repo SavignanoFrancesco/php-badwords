@@ -11,7 +11,7 @@ $frase = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm
 $frase_lenght= strlen($frase);
 
 // sostituisco la parola da censurare
-$censored_frase = str_replace($name, '***', $frase);
+$censored_frase = str_ireplace($name, '***', $frase);
 //lunghezza paragrafo censurato
 $censored_frase_lenght= strlen($censored_frase);
 
