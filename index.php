@@ -7,9 +7,13 @@ $title = "Censuratore";
 
 // paragrafo generico
 $frase = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+//lunghezza paragrafo originale
+$frase_lenght= strlen($frase);
 
 // sostituisco la parola da censurare
 $censored_frase = str_replace($name, '***', $frase);
+//lunghezza paragrafo censurato
+$censored_frase_lenght= strlen($censored_frase);
 
 ?>
 <!DOCTYPE html>
@@ -24,8 +28,8 @@ $censored_frase = str_replace($name, '***', $frase);
         </h1>
 
         <pre>
-        <p><?php echo 'Paragrafo non censurato: '.$frase; ?></p>
-        <p><?php echo 'Paragrafo censurato: '.$censored_frase; ?></p>
+        <p><?php echo 'Paragrafo non censurato: '.$frase.' [Lunghezza:'.$frase_lenght.']'; ?></p>
+        <p><?php echo 'Paragrafo censurato: '.$censored_frase.' [Lunghezza:'.$censored_frase_lenght.']'; ?></p>
 
         </pre>
 
